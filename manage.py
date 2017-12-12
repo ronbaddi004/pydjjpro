@@ -10,7 +10,7 @@ if __name__ == "__main__":
 >>>>>>> cbaee53949e114904f6c951a10f96a49b4d0616d
     try:
         from django.core.management import execute_from_command_line
-    except ImportError:
+        except ImportError:
         # The above import may fail for some other reason. Ensure that the
         # issue is really that Django is missing to avoid masking other
         # exceptions on Python 2.
