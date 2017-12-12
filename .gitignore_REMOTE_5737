@@ -1,6 +1,4 @@
 .py[cod]
-<<<<<<< HEAD
-=======
 db.sqlite3
 pydjjpro/settings/local.py
 .DS_Store
@@ -107,4 +105,3 @@ ENV/
 
 # mypy
 .mypy_cache/
->>>>>>> cbaee53949e114904f6c951a10f96a49b4d0616d

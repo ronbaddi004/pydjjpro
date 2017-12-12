@@ -1,0 +1,31 @@
+{% extends 'pydjjapp/base.html' %}
+{% block title %}
+Contact
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+<h1>Contact</h1>    
+<form action="" method="post">
+{% csrf_token %}
+    <!-- {{ form.as_p}} -->
+    <p>
+        <label for="id_contact_name">Name:</label>
+        <input type="text" name="contact_name" id="id_contact_name" maxlength="30" />
+    </p>
+    <p>
+        <label for="id_contact_email">Email:</label>
+        <input type="text" name="contact_email" id="id_contact_email" maxlength="50" />
+    </p>
+    <p>
+        <label for="id_content">Content:</label>
+        <textarea type="text" name="content" id="id_content" rows="10" cols="40"></textarea>
+    </p>
+    <p style="visibility:hidden;">
+        <label for="id_ip_add">Ip add:</label>
+        <input type="hidden" name="ip_add" value="ABC" required id="id_ip_add" maxlength="120" />
+    </p>
+    <button class="btn btn-lg btn-primary" type="submit">Send</button>
+</form>
+</div>
+{% endblock %}

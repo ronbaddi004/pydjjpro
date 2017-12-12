@@ -3,7 +3,11 @@ import os
 import sys
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pydj.settings")
+=======
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pydjjpro.settings")
+>>>>>>> cbaee53949e114904f6c951a10f96a49b4d0616d
     try:
         from django.core.management import execute_from_command_line
     except ImportError:
